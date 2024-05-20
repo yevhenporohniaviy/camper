@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Rent-Camper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Rent-Camper is an interactive web application designed to provide users with an intuitive platform for renting campers for their adventures. The project is built with modern technologies and follows best practices to ensure a seamless user experience.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Browse a catalog of campers available for rent.
+Filter and search for campers based on specific requirements.
+View detailed information about each camper, including features, reviews, and rental costs.
+Add favorite campers to a personalized list for easy access later.
+Book campers through an integrated booking form.
+Persist user actions and favorites using local storage.
 
-## Expanding the ESLint configuration
+# Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+React: A JavaScript library for building user interfaces.
+Redux Toolkit: A toolset for efficient Redux development.
+React Router: A collection of navigational components for React applications.
+Axios: A promise-based HTTP client for the browser and Node.js.
+Sass: A preprocessor scripting language that is interpreted or compiled into CSS.
+React Loader Spinner: A React component for loading spinner.
+Redux Persist: A library allowing to save the redux store in the local storage of the browser.
