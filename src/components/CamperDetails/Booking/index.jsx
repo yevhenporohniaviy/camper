@@ -1,4 +1,6 @@
 import { Field, Form, Formik, ErrorMessage } from "formik";
+import { useNavigate } from "react-router-dom";
+
 import * as Yup from "yup";
 
 import {
@@ -11,6 +13,7 @@ import {
 } from "./Booking.styled";
 
 const Booking = () => {
+  const navigate = useNavigate();
   const SignupSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, "Too Short!")
@@ -22,7 +25,7 @@ const Booking = () => {
   });
 
   const handleSubmit = () => {
-    window.location.reload();
+    navigate(`/`, { replace: true });
   };
 
   return (
