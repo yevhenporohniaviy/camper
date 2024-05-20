@@ -52,13 +52,22 @@ const Booking = () => {
             />
 
             <Field type="email" name="email" id="email" placeholder="Email" />
-            <ErrorMessage name="email" />
+            <ErrorMessage
+              render={(msg) => <ErrorText>{msg}</ErrorText>}
+              name="email"
+            />
 
             <Field type="date" name="date" id="date" />
-            <ErrorMessage name="date" />
+            <ErrorMessage
+              render={(msg) => <ErrorText>{msg}</ErrorText>}
+              name="date"
+            />
 
             <Field as="textarea" name="comment" id="comment" rows="5" />
-            <ErrorMessage name="comment" />
+            <ErrorMessage
+              render={(msg) => <ErrorText>{msg}</ErrorText>}
+              name="comment"
+            />
           </InputsGroup>
 
           <SendButton type="submit">Send</SendButton>
